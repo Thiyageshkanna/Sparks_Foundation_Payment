@@ -246,7 +246,7 @@ nav {
 }
 
 /*Stying for small screens*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   nav {
     position: fixed;
     z-index: 3;
@@ -823,4 +823,23 @@ h4 {
   color: #bbb;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 500px) {
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 23px;
+  }
+  .header__title h1 {
+    font-size: 30px !important;
+  }
+  .header__title h4 {
+    font-size: 25px;
+  }
+  .header__title img {
+    width: 100%;
+    height: auto;
+  }
 }

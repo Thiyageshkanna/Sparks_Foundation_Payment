@@ -30,7 +30,7 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-// Responsive Navbar
+// Responsive Navbar Start
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
@@ -45,3 +45,4 @@ hamburger.addEventListener("click", () => {
   //Hamburger Animation
   hamburger.classList.toggle("toggle");
 });
+// Responive Navbar Finished
