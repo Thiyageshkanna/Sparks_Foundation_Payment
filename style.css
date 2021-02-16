@@ -851,7 +851,7 @@ h4 {
   /* images */
   .features {
     display: block;
-    margin-left: 10px;
+    margin-left: 0px;
     width: 100%;
   }
   .features img {
