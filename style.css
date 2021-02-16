@@ -106,15 +106,11 @@ button:focus {
 img {
   transition: filter 0.5s;
 }
-
-.lazy-img {
-  filter: blur(20px);
-}
-
-/* navbar responsive */
 body {
   overflow-x: hidden;
 }
+/* navbar responsive */
+
 nav {
   height: 8rem;
   width: 100vw;
@@ -841,5 +837,81 @@ h4 {
   .header__title img {
     width: 100%;
     height: auto;
+    grid-column: 1;
+    grid-row: 2 / 5;
+  }
+  /* Section Title */
+  .section__title h2 {
+    display: flex;
+    justify-content: center;
+  }
+  .section__title h3 {
+    font-size: 2em;
+  }
+  /* images */
+  .features {
+    display: block;
+    margin-left: 10px;
+    width: 100%;
+  }
+  .features img {
+    display: block;
+    text-align: center;
+  }
+  .features__feature {
+    display: block;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .features__icon {
+    margin-left: 40%;
+  }
+  .features__header {
+    display: flex;
+    justify-content: center;
+  }
+  .features__feature p {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  /* start order of the features */
+  #parent {
+    display: flex;
+    flex-flow: column;
+  }
+  #first {
+    order: 1;
+  }
+  #second {
+    order: 2;
+  }
+  #third {
+    order: 4;
+  }
+  #forth {
+    order: 3;
+  }
+  #fifth {
+    order: 5;
+  }
+  #sixth {
+    order: 6;
+  }
+  /* end of features */
+
+  .operations .btn {
+    display: none;
+  }
+  .footer {
+    padding: 0rem 0rem;
+  }
+  .footer__nav {
+    display: flex;
+    flex-direction: row;
+    flex-flow: column;
+    margin-left: 2em;
+  }
+  .footer__item {
+    margin: 1rem;
   }
 }
