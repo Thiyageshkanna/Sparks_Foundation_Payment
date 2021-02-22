@@ -49,3 +49,15 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("toggle");
 });
 // Responive Navbar Finished
+
+// Smooth Transition Start
+
+const btnScroll = document.querySelector(".btn--scroll-to");
+
+const btnScrollEnd = document.querySelector("#section--1");
+
+btnScroll.addEventListener("click", (e) => {
+  btnScrollEnd.scrollIntoView({ behavior: "smooth" });
+});
+
+// Smooth Transition end
