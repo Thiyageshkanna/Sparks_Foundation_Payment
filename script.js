@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 // Modal window
 
@@ -66,8 +66,18 @@ btnScroll.addEventListener("click", (e) => {
 
 const events = document.querySelector("h1");
 const func = () => {
-  alert("hello");
   events.removeEventListener("mouseover", func);
 };
 
 events.addEventListener("mouseover", func);
+
+// scroll
+
+document.querySelector(".nav-links").addEventListener("click", (e) => {
+  e.preventDefault();
+  //
+  if (e.target.classList.contains("nav-link")) {
+    const id = e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  }
+});
