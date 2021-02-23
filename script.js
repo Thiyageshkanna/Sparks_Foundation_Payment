@@ -61,3 +61,13 @@ btnScroll.addEventListener("click", (e) => {
 });
 
 // Smooth Transition end
+
+// add event listener
+
+const events = document.querySelector("h1");
+const func = () => {
+  alert("hello");
+  events.removeEventListener("mouseover", func);
+};
+
+events.addEventListener("mouseover", func);
