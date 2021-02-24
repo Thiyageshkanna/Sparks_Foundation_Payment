@@ -7,6 +7,16 @@ const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".btn--close-modal");
 const btnsOpenModal = document.querySelectorAll(".btn--show-modal");
 
+// Responsive Navbar Start
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+// Smooth Transition Start
+
+const btnScroll = document.querySelector(".btn--scroll-to");
+const btnScrollEnd = document.querySelector("#section--1");
+
 const openModal = function (e) {
   e.preventDefault();
 
@@ -34,9 +44,6 @@ document.addEventListener("keydown", function (e) {
 });
 
 // Responsive Navbar Start
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li");
 
 hamburger.addEventListener("click", () => {
   //Animate Links
@@ -51,10 +58,6 @@ hamburger.addEventListener("click", () => {
 // Responive Navbar Finished
 
 // Smooth Transition Start
-
-const btnScroll = document.querySelector(".btn--scroll-to");
-
-const btnScrollEnd = document.querySelector("#section--1");
 
 btnScroll.addEventListener("click", (e) => {
   btnScrollEnd.scrollIntoView({ behavior: "smooth" });
@@ -81,3 +84,4 @@ document.querySelector(".nav-links").addEventListener("click", (e) => {
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }
 });
+// Scroll End
