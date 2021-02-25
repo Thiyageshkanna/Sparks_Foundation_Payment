@@ -14,7 +14,7 @@
 
 * {
   margin: 0;
-  padding: 0; 
+  padding: 0;
   box-sizing: inherit;
 }
 
@@ -119,6 +119,7 @@ nav {
   display: flex;
   z-index: 10;
   justify-content: space-between;
+  position: fixed;
 }
 
 /*Styling logo*/
@@ -420,7 +421,6 @@ h4 {
 .operations {
   max-width: 100rem;
   margin: 12rem auto 0 auto;
-
   background-color: #fff;
 }
 
