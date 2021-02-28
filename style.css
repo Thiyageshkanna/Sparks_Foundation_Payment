@@ -119,7 +119,10 @@ nav {
   display: flex;
   z-index: 10;
   justify-content: space-between;
+}
+.sticky {
   position: fixed;
+  background-color: white;
 }
 
 /*Styling logo*/
@@ -197,6 +200,11 @@ nav {
   transition: none !important;
   margin: 0 0 0 10%;
 }
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 /*Styling Buttons*/
 .login-button {
   background-color: transparent;

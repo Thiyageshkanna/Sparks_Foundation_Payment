@@ -19,6 +19,10 @@ const btnScrollEnd = document.querySelector("#section--1");
 const tabs = document.querySelectorAll(".operations__tab");
 const tabsContainer = document.querySelector(".operations__tab-container");
 const tabsContent = document.querySelectorAll(".operations__content");
+// Nav
+const navBar = document.querySelector(".nav");
+// Header
+const header = document.querySelector(".header");
 
 // Modal window
 
@@ -125,3 +129,46 @@ tabsContainer.addEventListener("click", function (e) {
 });
 
 // |---------------------------------------------------------------------------|
+
+// The Observer Intersection API
+
+//  NavBar
+const obsCallback = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) navBar.classList.add("sticky");
+  else navBar.classList.remove("sticky");
+};
+
+const obsObj = {
+  root: null,
+  threshold: 0,
+  rootMargin: "-90px",
+};
+
+const observer = new IntersectionObserver(obsCallback, obsObj);
+
+observer.observe(header);
+
+// content loading when we scroll
+
+const sectionAll = document.querySelectorAll(".section");
+
+const loadFunc = function (entries, observer) {
+  const [entry] = entries;
+  console.log(entry);
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("section--hidden");
+  observer.unobserve(entry.target);
+};
+
+const loadOps = {
+  root: null,
+  threshold: 0.2,
+};
+
+const obsLoad = new IntersectionObserver(loadFunc, loadOps);
+sectionAll.forEach((section) => {
+  section.classList.add("section--hidden");
+  obsLoad.observe(section);
+});
