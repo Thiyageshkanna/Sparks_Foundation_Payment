@@ -150,6 +150,8 @@ const observer = new IntersectionObserver(obsCallback, obsObj);
 
 observer.observe(header);
 
+// |---------------------------------------------------------------------------|
+
 // content loading when we scroll
 
 const sectionAll = document.querySelectorAll(".section");
@@ -169,6 +171,19 @@ const loadOps = {
 
 const obsLoad = new IntersectionObserver(loadFunc, loadOps);
 sectionAll.forEach((section) => {
-  section.classList.add("section--hidden");
+  // section.classList.add("section--hidden");
   obsLoad.observe(section);
 });
+
+// |---------------------------------------------------------------------------|
+
+// Slider
+
+const slide = document.querySelectorAll(".slide");
+
+const slider = document.querySelector(".slider");
+
+slider.style.transform = "scale(0.3) translateX(-1400px)";
+slider.style.overflow = "visible";
+
+slide.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
