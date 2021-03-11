@@ -170,7 +170,7 @@ const loadOps = {
 
 const obsLoad = new IntersectionObserver(loadFunc, loadOps);
 sectionAll.forEach((section) => {
-  // section.classList.add("section--hidden");
+  section.classList.add("section--hidden");
   obsLoad.observe(section);
 });
 
