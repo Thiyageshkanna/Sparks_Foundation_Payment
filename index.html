@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Bankist | When Banking meets Minimalist</title>
     <script defer src="script.js"></script>
+    <script defer src="razorpay.js "></script>
   </head>
   <body>
     <header class="header">
@@ -49,7 +50,17 @@
           <span class="highlight">minimalist</span>
         </h1>
         <h4>A simpler banking experience for a simpler life.</h4>
-        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+
+        <button class="btn--text btn--scroll-to">
+          <div
+          class="razorpay-embed-btn"
+          data-url="https://pages.razorpay.com/pl_GkxRxRavWi3YRe/view"
+          data-text="Donate Now"
+          data-color="#528FF0"
+          data-size="large"
+        >Learn more &DownArrow;
+        </button>
+
         <img
           src="img/hero.png"
           class="header__img"
