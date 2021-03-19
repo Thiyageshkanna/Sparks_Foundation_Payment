@@ -848,6 +848,9 @@ h4 {
     grid-column: 1;
     grid-row: 2 / 5;
   }
+  .header__title {
+    margin-right: -15px !important;
+  }
   /* Section Title */
   .section__title h2 {
     display: flex;
