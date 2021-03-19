@@ -830,6 +830,9 @@ h4 {
 }
 
 @media only screen and (max-width: 600px) {
+  .testimonial__location {
+    margin-bottom: 20px !important;
+  }
   .nav-links li a {
     text-decoration: none;
     color: white;
