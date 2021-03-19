@@ -833,6 +833,9 @@ h4 {
   .testimonial__location {
     margin-bottom: 20px !important;
   }
+  .modal {
+    display: none;
+  }
   .nav-links li a {
     text-decoration: none;
     color: white;
