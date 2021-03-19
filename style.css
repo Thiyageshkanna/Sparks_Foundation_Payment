@@ -849,7 +849,7 @@ h4 {
     grid-row: 2 / 5;
   }
   .header__title {
-    margin-right: -15px !important;
+    margin-right: -18px !important;
   }
   /* Section Title */
   .section__title h2 {
@@ -929,7 +929,7 @@ h4 {
   }
   .operations__content--active {
     display: grid;
-    grid-template-columns: 10px 270px auto 100px !important;
+    grid-template-columns: 0px 230px auto 100px !important;
     column-gap: 3rem;
     row-gap: 0.5rem;
     margin-left: -50px;
@@ -941,7 +941,7 @@ h4 {
     align-self: center;
   }
   .slider {
-    height: 950px !important;
+    height: 1000px !important;
   }
 
   /* end of features */
